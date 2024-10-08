@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Satisfy';
+    src: url('Satisfy/Satisfy-Regular.ttf') format('truetype'); /* Pfad zur TTF-Datei */
+    /* Füge weitere Formate hinzu, falls vorhanden */
+}
+
+
+body {
+background-color: black;
+color: white;
+font-family: Helvetica, Arial, sans-serif;
+}
+
+.menu {
+    background: #8B0000;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 5px;
+     }
+
+.menu-item {
+    border: 0.1rem solid black;
+    padding: 0.4rem;
+    background-color: #B22222;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.best-burgers {
+color: rgb(0, 0, 0); 
+padding: 0.2rem;
+}
+
+.hiddenSpeisekarte {
+    padding: 0.2rem;
+    color: white;
+    background-color: black;
+    border-radius: 0.3rem;
+}
+
+
+#tooltip {
+    display: none;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    left: 13%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 11px;
+}
+
+
+.price {
+    color: rgb(166, 164, 164);
+}
+
+.menu-item h2 {
+        font-weight: bold;
+        font-family: 'Satisfy';
+        color: #ffffff; /* Grundfarbe weiß */
+        background: linear-gradient(to right, #f8f7f7, #ffffff); /* Silberfarbener Verlauf */
+        -webkit-background-clip: text; /* Clip den Hintergrund auf den Text */
+        -webkit-text-fill-color: transparent; /* Text transparent machen */
+        text-shadow: 0 0 5px rgba(192, 192, 192, 0.7), 0 0 10px rgba(192, 192, 192, 0.5); /* Glanz mit Silbertönen */
+    } 
+
+
+.burger-item {
+    margin: 5px;
+}
+
+.burger-pics {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.burger-item:nth-child(1) {
+order: 2;
+}
+
+.burger-item:nth-child(2) {
+    order: 3;
+}
+
+.burger-item:nth-child(3) {
+order: 1;
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+.bar-item {
+    margin: 5px;
+
+}
+
+.bar-item h3 {
+   padding: 1rem;
+}
+
+.wine-image {
+    float: left;
+}
+
+.drinks-text {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.drinks-text h3 {
+    padding: 0.3rem;
+}
+
+
+.drinks-text p {
+    padding: 0.3rem;
+}
+
+header {
+    text-align: center; 
+    font-family: 'Satisfy', cursive;
+}
+
+.glanz-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff; /* Grundfarbe weiß */
+    background: linear-gradient(to right, #ffd700, #fffacd); /* Goldfarbener Verlauf */
+    -webkit-background-clip: text; /* Clip den Hintergrund auf den Text */
+    -webkit-text-fill-color: transparent; /* Text transparent machen */
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.7), 0 0 10px rgba(255, 215, 0, 0.5); /* Glanz mit Goldtönen */
+}
+
+
+nav {
+    background: #8B0000;
+    margin: 5px;
+    justify-content: center;
+    border-radius: 0.2rem;
+}
+
+nav ul {
+list-style-type: none;  
+justify-content: center;
+display: flex;
+}
+
+nav li {
+    margin: 1rem;
+    text-align: center;
+}
+
+nav li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+nav ul li a:hover {
+background-color: #000000;
+box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Schatten beim Hover verstärken */
+}
+
+main {
+    overflow: auto;
+}
+
+#lightbox {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease-in;
+}
+
+#lightbox.zeigen {
+    background-color: #000000;
+opacity: 1;
+visibility: visible;
+}
+
+
+#lightbox img {
+    max-width: 95%; /* Maximale Breite des Bildes */
+    max-height: 95%; /* Maximale Höhe des Bildes */
+    width: auto; /* Automatische Breite, um das Seitenverhältnis zu wahren */
+    height: auto; /* Automatische Höhe, um das Seitenverhältnis zu wahren */
+}
+
+
+#lightbox .schliessen {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    color: white;
+    font-size: 2rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #2F2F2F;
+    margin: 5px;
+    border-radius: 0.2rem;
+    text-align: center;
+}
+
+.footer-menu ul {
+    list-style-type: none;  
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: white;
+}

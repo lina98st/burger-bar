@@ -230,3 +230,50 @@ footer {
     text-decoration: none;
     color: white;
 }
+
+/* Füge am Ende deiner CSS-Datei die folgenden Media Queries hinzu */
+
+@media (max-width: 768px) {
+    .burger-pics {
+        flex-direction: column; /* Bilder untereinander anordnen */
+    }
+
+    .menu {
+        flex-direction: column; /* Menü-Items untereinander anordnen */
+    }
+
+    .menu-item {
+        margin: 10px 0; /* Abstand zwischen den Menü-Items */
+    }
+
+    .drinks-text {
+        padding: 1rem; /* Mehr Platz für den Text */
+    }
+
+    .bar-item {
+        margin: 0; /* Abstand der Bar-Item-Bilder anpassen */
+        text-align: center; /* Bild zentrieren */
+    }
+
+    .wine-image {
+        width: 100%; /* Breite des Weinfotos auf 100% setzen */
+        height: auto; /* Höhe automatisch anpassen */
+    }
+
+    nav ul {
+        flex-direction: column; /* Navigationselemente untereinander anordnen */
+        align-items: center; /* Zentriere die Navigationselemente */
+    }
+
+    nav li {
+        margin: 0.5rem 0; /* Vertikalen Abstand zwischen den Navigationselementen */
+    }
+
+    .glanz-text {
+        font-size: 36px; /* Schriftgröße für den Header anpassen */
+    }
+
+    header {
+        padding: 1rem; /* Mehr Platz um den Header-Text */
+    }
+}
